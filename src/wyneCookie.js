@@ -6,7 +6,7 @@ let wyneCookie = {
  /* url方法配置 */
  globalData: {
   setting: {
-   domain: "https://lf.zuozishu.com/",
+   domain: "https://xxxxx.zuozishu.com/",
    default_module: 'index',
    default_controller: 'index',
    default_action: 'index',
