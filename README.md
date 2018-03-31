@@ -5,8 +5,8 @@
 * 微信小程序没有cookie机制,这个扩展实现了简单cookie保存和获取,并重写了wx.request方法,让其能自动设置和获取cookie
 
 ## how to used? 使用方法
-* 在app.js顶部引入即可,如:require('src/wyneCookie.js');
-* 如需要给wx.request方法加入钩子,让其能自动设置和获取cookie,则请在引入后,在app.js的App对象的onLaunch方法开头调用方法:wx.cookie.initRequest();
+* 在app.js顶部引入即可:```require('src/wyneCookie.js');```
+* 如需要给wx.request方法加入钩子,让其能自动设置和获取cookie,则请在引入后,在app.js的App对象的onLaunch方法开头调用方法:```wx.cookie.initRequest();```
 
 
 ### wx.cookie.setCookie(key,value)
