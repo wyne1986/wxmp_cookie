@@ -76,7 +76,7 @@ let wyneCookie = {
  setCookie: function (key, value) {
   var cookie = wx.getStorageSync('wynecookie');
   if (typeof cookie != "object") cookie = {};
-  if (key === false) { wx.setStorageSync('wynecookie', null); return true; }
+  if (key === false) { wx.removeStorageSync('wynecookie'); return true; }
   if (typeof key != "string") { throw 'setCookie first parameter key must be string, ' + (typeof key) + ' given.'; return false; }
   if (value == null){
    delete cookie[key];
